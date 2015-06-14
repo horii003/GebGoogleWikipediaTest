@@ -59,13 +59,16 @@ sauceLabs {
 }
 
 task functionalTests {
+//  def browser = browserSpec.collect { key, value -> "${key}=${value}" }.join(',')
+  def output = "target/test-reports/geb/testrep"
+
   group "Sauce Test"
-//  testResultsDir = file(output)
+  testResultsDir = file(output)
 //  phases = ['functional:']
-//  jvmOptions.with {
+  jvmOptions.with {
 //      systemProperty "geb.saucelabs.browser", browser
-//      systemProperty "geb.build.reportsDir", output
-//  }
+      systemProperty "geb.build.reportsDir", output
+  }
   dependsOn 'openSauceTunnelInBackground'
   finalizedBy 'closeSauceTunnel'
 }
