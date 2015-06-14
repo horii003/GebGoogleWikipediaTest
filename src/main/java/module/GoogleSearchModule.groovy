@@ -1,7 +1,7 @@
-package module
+package me.double.module
 
 import geb.Module
-import page.GoogleResultsPage
+import me.double.page.GoogleResultsPage
 
 class GoogleSearchModule extends Module {
 
@@ -11,7 +11,7 @@ class GoogleSearchModule extends Module {
 	// the content DSL
 	static content = {
 
-		// name the search input control ÅgfieldÅh, defining it with the jQuery like navigator
+		// name the search input control ¬Ågfield¬Åh, defining it with the jQuery like navigator
 		field { $("input", name: "q") }
 
 		// the search button declares that it takes us to the results page, and uses the
