@@ -1,7 +1,7 @@
-package me.double.module
+package module
 
 import geb.Module
-import me.double.page.GoogleResultsPage
+import page.GoogleResultsPage
 
 class GoogleSearchModule extends Module {
 
