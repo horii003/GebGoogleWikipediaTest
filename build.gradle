@@ -70,12 +70,15 @@ task functionalTests {
 //      systemProperty "geb.build.reportsDir", output
 //  }
   dependsOn 'openSauceTunnelInBackground'
+
+  systemProperties 'property': 'value'
+   
   finalizedBy 'closeSauceTunnel'
 }
 
-test {
-    systemProperties 'property': 'value'
-}
+//test {
+//    systemProperties 'property': 'value'
+//}
 
 uploadArchives {
     repositories {
