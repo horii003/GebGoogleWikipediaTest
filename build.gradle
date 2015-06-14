@@ -63,7 +63,7 @@ task functionalTests {
   def output = "target/test-reports/geb/testrep"
 
   group "Sauce Test"
-  testResultsDir = file(output)
+//  testResultsDir = file(output)
 //  phases = ['functional:']
   jvmOptions.with {
 //      systemProperty "geb.saucelabs.browser", browser
