@@ -1,9 +1,3 @@
-jar {
-    manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
-    }
-}
-
 buildscript {
   repositories {
     mavenCentral()
