@@ -70,9 +70,6 @@ task functionalTests {
 //      systemProperty "geb.build.reportsDir", output
 //  }
   dependsOn 'openSauceTunnelInBackground'
-
-  systemProperties 'property': 'value'
-   
   finalizedBy 'closeSauceTunnel'
 }
 
