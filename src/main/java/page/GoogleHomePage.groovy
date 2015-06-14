@@ -1,14 +1,14 @@
-package page
+package me.double.page
 
 import geb.Page
-import module.GoogleSearchModule
+import me.double.module.GoogleSearchModule
 
 class GoogleHomePage extends Page {
 
 	// pages can define their location, either absolutely or relative to a base
 	static url = "http://google.com/ncr"
 
-	// Ågat checkersÅh allow verifying that the browser is at the expected page
+	// ¬Ågat checkers¬Åh allow verifying that the browser is at the expected page
 	static at = { title == "Google" }
 
 	static content = {
