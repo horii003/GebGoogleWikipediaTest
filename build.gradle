@@ -62,10 +62,10 @@ task functionalTests {
   group "Sauce Test"
 //  testResultsDir = file(output)
 //  phases = ['functional:']
-  jvmOptions.with {
-      systemProperty "geb.saucelabs.browser", browser
-      systemProperty "geb.build.reportsDir", output
-  }
+//  jvmOptions.with {
+//      systemProperty "geb.saucelabs.browser", browser
+//      systemProperty "geb.build.reportsDir", output
+//  }
   dependsOn 'openSauceTunnelInBackground'
   finalizedBy 'closeSauceTunnel'
 }
