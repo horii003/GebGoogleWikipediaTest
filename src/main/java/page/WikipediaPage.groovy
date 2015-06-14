@@ -1,4 +1,4 @@
-package page
+package me.double.page
 
 import geb.Page
 
